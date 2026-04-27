@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Falcons Lounge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0f172a;color:#fff}
+
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#020617}
+    header h1{color:#38bdf8}
+    nav a{margin-left:20px;text-decoration:none;color:#fff}
+    nav a:hover{color:#38bdf8}
+
+    .container{padding:40px;max-width:1100px;margin:auto}
+
+    .logonav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  }
+
+    .logonav img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%; /* optional: makes it circular */}
+
+    .hero{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .hero h2{font-size:2.5rem;margin-bottom:10px}
+    .hero p{opacity:0.8}
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#020617;
+      padding:20px;
+      border-radius:15px;
+      transition:0.3s;
+      text-align:center;
+    }
+
+    .card:hover{transform:translateY(-8px)}
+
+    .card h3{margin-bottom:10px;color:#38bdf8}
+
+    .team{
+      margin-top:50px;
+      text-align:center;
+    }
+
+    .team-members{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .member{
+      background:#020617;
+      padding:15px;
+      border-radius:15px;
+      width:200px;
+    }
+
+    .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  }
+
+    .logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%; /* optional: makes it circular */}
+
+    .member img{
+      width:100%;
+      border-radius:10px;
+      margin-bottom:10px;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#020617;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+  <img src="Logo.png" alt="Image">
+  <h1>About Us</h1>
+</div>
+  <nav>
+    <a href="index.html" class="logonav">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEX///8AAAABAQG1tbU8PDw/Pz9ERETv7+/09PR2dnbb29uioqLU1NQgICDFxcW6urqFhYUsLCyLi4uTk5NsbGzn5+fLy8ubm5sODg4XFxcxMTE2NjZ+fn6qqqpMTEwlJSVWVlZeXl5Tn/4qAAAD00lEQVR4nO2bbZuqKhSGw8y3NCvD0Ezt///J7VqmougeOynOvs6658MAad3zSAjU7HYEQRAEQRAEQRAEQRAE8c8TRzljeeRv7SHjJgxJsq1NWrjJWky+tU2NY6FOWeIvy9naB7AvlYrYQ3EvquLF3tqoySmsK+HvyMouoH/HTTWGHl/UWXH/jW5JG3M6dQ0nzAqsTm33L/WOFHZQvWYQy00xNtm7mEnozErJCaizcs7M6KSOGp0SJScAszKrEd7Yh/t9eK+qV21OHHNSnHbvK2cwA2veRaMU9qdixKmyKjaS4oeJnNCqctpACsdxtT+1VsEGSfEH5NQbf1xXrvlwAfVK2Snk1BsLroOXPgWapXiq5gQtw6x0SuG1S3o5netB8iy3nXRKcbwHqzmpWemTwnmm6L3vMKcoUrLSJsXx3qLmdMW+PshKk1Q9H+/llL2d3lbDtcP6UhxetvDkJswpqsvRSFarS03lFDW1kaxAas01DuZ0UXO6d/W7klV9k1zNqs5J7eOR3KJeQX/N9SDmlMpOzjAnoM5KngD76WpZ1ffg3rW7KTkBmNVNbvGg5bGCFRfDnJT+1KD2K8xKLG7lpTNzAiaySr2xg/87PBjPaWKZchzPKlg0Kw/3C2bmBIxkJZTh5EsnmBdcZucEjGR1UW4GXwFrqeSDnICRrOBWbi3lFAsmXHUc/2HZq2blvYZzni8Ih+/828RY0OeuZAUt4UJSVe7JTXKY56RaPUsx6AXfcJfnlM5cp8aqueOcZ583j7M0I5nv1M8qG58tf0HUWDmvGX28A3v7y9kN513LkL2tPskJaLLKpKyXA589Q6fnJ+c90SpbuD81nNl7b+7D58a/Bk5dtD/Jz258viMNe9rGOjkBV7Q6tJv33l9p3O0DOq22oOHPnHVSF/Z3eCvF8ueaH9lkndTpB6cmG5Ba98Mtt5MKf5I6d1LKWn5Nqew4wTXZTmpyHuIH7XCmXeo0dRxIHUlqplT2G6W26ugkRVIkRVIktaKU1kkeSf0vpFbo6E4HSPG6uK+kQmcC+LpEVp8In8240kPLOB1zq6UKQNSlHPagH9YEZrX+LN7nCcaC7pF8kS/j8P7CyRgpjTJ54BLr0oHU9yyyWA4tc0EOS+3EEgRBEARBEARBEARBEARB/CvsfyG7pTekl2BnAFXh1TYZOhn6YOMO/o2SMdf0TTe9lXlZJvg/qO8fqfhhdeahRVAkiWGawkwfD/NSYCMmxco45ncex3bs+6bOqFhqlS/3YOVFmeaWVQSsSyqIQ372/Gu8j+OH1qTg+hVMGEKIRDQP/AFb4j/gMWoZQgAAAABJRU5ErkJggg==" alt="Home image">
+      <p>Home</p>
+    </a>
+    <a href="News.html" class="logonav">
+      <img src="data:image/png;base64,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" alt="News logo">
+      <p>News</p>
+    </a>
+    <a href="About.html" class="logonav">
+      <img src="data:image/png;base64,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" alt="About logo">
+      <p>About</p>
+    </a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <h2>About Us</h2>
+    <p>Your ultimate destination for entertainment, gaming, movies, and trending content.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🎯 Our Mission</h3>
+      <p>To deliver high-quality, engaging, and entertaining content to our global audience.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔥 What We Do</h3>
+      <p>We create videos, share news, and bring you the latest updates in gaming and movies.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌍 Our Vision</h3>
+      <p>To build a strong community of fans who love creativity, entertainment, and innovation.</p>
+    </div>
+  </div>
+
+  <div class="team">
+    <h2>Meet the Team</h2>
+    <div class="team-members">
+
+      <div class="member">
+        <img src="https://via.placeholder.com/200" alt="Team Member">
+        <h4>Falcon Leader</h4>
+        <p>Founder & Creator</p>
+      </div>
+
+      <div class="member">
+        <img src="c62c5a61-b21b-4535-bce2-4e94c81beacf.png" alt="Team Member">
+        <h4>Simora Boakye Fosua</h4>
+        <p>Video Editor</p>
+      </div>
+
+      <div class="member">
+        <img src="https://via.placeholder.com/200" alt="Team Member">
+        <h4>Content Manager</h4>
+        <p>Content Strategist</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Falcons Lounge | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
